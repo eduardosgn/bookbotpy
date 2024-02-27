@@ -21,7 +21,7 @@ def sort_counts(counts):
     for letter, count in counts.items():
         item_dict = {"letter": letter, "count": count}
         counts_list.append(item_dict)
-    counts_list.sort(key=lambda x: x["count"], reverse=True)
+    counts_list.sort(key=lambda x: x["letter"], reverse=False)
     return counts_list
     
 def main():
